@@ -16,17 +16,34 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //Caputamos todos los btn de nuestro layout
         val btnCalculadora : Button = findViewById(R.id.btnCalculadora);
+        val btnPromedio : Button = findViewById(R.id.BtnPromedios);
+        val btnDescuento : Button = findViewById(R.id.btnDescuento);
 
-        //asignamos la funcion segun su respectivo boton
+
+
+        //Funcion para ir al primer ejercicio
+        btnPromedio.setOnClickListener{
+            irAPromedio();
+        }
+
+
+
+        //Funcion para ir al 3 ejercicio
         btnCalculadora.setOnClickListener{
             irACalculadora();
         }
+
     }
 
-    //Creamos funcion para movernos a otro layout
+    //Creamos funcion para movernos a layout Calculadora
     fun irACalculadora(){
     val intent = Intent(this, CalculadoraActivity::class.java).apply {  }
         startActivity(intent)
     }
 
+    //Creamos funcion para movernos a layout promedio
+    fun irAPromedio(){
+        val intent = Intent(this, PromedioActivity::class.java).apply {  }
+        startActivity(intent)
+    }
 }
