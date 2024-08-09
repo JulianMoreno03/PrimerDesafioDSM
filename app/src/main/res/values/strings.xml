@@ -3,11 +3,11 @@
     <string name="indicacionPromedio">Ingresa tus 5 notas para calcular tu promedio</string>
     <string name="btnVolver">Volver</string>
     <string name="nombre">Nombre completo</string>
-    <string name="primeraNota">Primera Nota</string>
-    <string name="segundaNota">Segunda Nota</string>
-    <string name="terceraNota">Tercera Nota</string>
-    <string name="cuartaNota">Cuarta Nota</string>
-    <string name="quintaNota">Quinta Nota</string>
+    <string name="primeraNota">Primera Nota 15%</string>
+    <string name="segundaNota">Segunda Nota 15%</string>
+    <string name="terceraNota">Tercera Nota 20%</string>
+    <string name="cuartaNota">Cuarta Nota 25%</string>
+    <string name="quintaNota">Quinta Nota 25%</string>
     <string name="btnCalcular">Calcular </string>
     <string name="btnBorrar">Borrar</string>
 
