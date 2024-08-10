@@ -5,31 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <View
         android:id="@+id/view"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:layout_marginBottom="631dp"
+        android:background="@color/bgHeader"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008"
-        android:background="@color/bgHeader"/>
-
+        app:layout_constraintVertical_bias="0.008" />
 
     <Button
         android:id="@+id/btnVolver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btnVolver"
+        android:layout_width="66dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view"
         app:layout_constraintVertical_bias="0.846" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="54dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnVolver"
+        app:layout_constraintEnd_toEndOf="@+id/btnVolver"
+        app:layout_constraintStart_toStartOf="@+id/btnVolver"
+        app:layout_constraintTop_toTopOf="@+id/btnVolver"
+        app:srcCompat="@drawable/flecha" />
 
     <View
         android:id="@+id/view2"
@@ -41,7 +52,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
         app:layout_constraintVertical_bias="0.0" />
-
 
     <EditText
         android:id="@+id/Nombre"
@@ -123,7 +133,7 @@
         app:layout_constraintVertical_bias="0.409" />
 
     <Button
-        android:id="@+id/btnCalPromedio"
+        android:id="@+id/btnCalcular"
         android:layout_width="127dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/btnCalcular"
@@ -162,5 +172,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
         app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QuintaNota" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
