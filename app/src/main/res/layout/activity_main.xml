@@ -11,6 +11,7 @@
         android:id="@+id/view1"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
+        android:background="@color/bgHeader"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -23,13 +24,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Primer Desafio DSM"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/view1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintHorizontal_bias="0.224"
         app:layout_constraintStart_toStartOf="@+id/view1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.735" />
+        app:layout_constraintVertical_bias="0.705" />
 
     <View
         android:id="@+id/view3"
@@ -42,40 +44,92 @@
         app:layout_constraintTop_toBottomOf="@+id/view1"
         app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/BtnPromedios"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Promedios"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnDescuento"
-        app:layout_constraintHorizontal_bias="0.115"
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:text="@string/txtelegir"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view1"
-        app:layout_constraintVertical_bias="0.413" />
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/BtnPromedios"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:backgroundTint="@color/btnCalcular"
+        android:text="Promedios"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:layout_constraintVertical_bias="0.178" />
 
     <Button
         android:id="@+id/btnDescuento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="137dp"
+        android:backgroundTint="@color/btnMenuSegundo"
         android:text="Descuento"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnCalculadora"
-        app:layout_constraintHorizontal_bias="0.305"
-        app:layout_constraintStart_toEndOf="@+id/BtnPromedios"
-        app:layout_constraintTop_toBottomOf="@+id/view1"
-        app:layout_constraintVertical_bias="0.413" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnPromedios"
+        app:layout_constraintVertical_bias="0.23" />
 
     <Button
         android:id="@+id/btnCalculadora"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
         android:text="Calculadora"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btnDescuento"
-        app:layout_constraintTop_toBottomOf="@+id/view1"
-        app:layout_constraintVertical_bias="0.413" />
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDescuento"
+        app:layout_constraintVertical_bias="0.477" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="86dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/BtnPromedios"
+        app:layout_constraintEnd_toEndOf="@+id/BtnPromedios"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="@+id/BtnPromedios"
+        app:layout_constraintTop_toTopOf="@+id/BtnPromedios"
+        app:srcCompat="@drawable/primero" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="69dp"
+        android:layout_height="101dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDescuento"
+        app:layout_constraintEnd_toEndOf="@+id/btnDescuento"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="@+id/btnDescuento"
+        app:layout_constraintTop_toTopOf="@+id/btnDescuento"
+        app:layout_constraintVertical_bias="0.416"
+        app:srcCompat="@drawable/segundo" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="93dp"
+        android:layout_height="89dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCalculadora"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalculadora"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCalculadora"
+        app:layout_constraintTop_toTopOf="@+id/btnCalculadora"
+        app:srcCompat="@drawable/tercero" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

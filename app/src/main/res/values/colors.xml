@@ -5,4 +5,5 @@
     <color name="bgHeader">#3282B8 </color>
     <color name="btnCalcular">#04E762</color>
     <color name="btnBorrar">#FF0404</color>
+    <color name="btnMenuSegundo">#F7AD19</color>
 </resources>
