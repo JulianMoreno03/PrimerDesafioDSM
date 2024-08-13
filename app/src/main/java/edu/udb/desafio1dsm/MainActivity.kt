@@ -26,7 +26,10 @@ class MainActivity : AppCompatActivity() {
             irAPromedio();
         }
 
-
+        //Funcion para ir al 2 ejercicio
+        btnDescuento.setOnClickListener{
+            irADescuento();
+        }
 
         //Funcion para ir al 3 ejercicio
         btnCalculadora.setOnClickListener{
@@ -46,4 +49,11 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, PromedioActivity::class.java).apply {  }
         startActivity(intent)
     }
+
+    //Creamos funcion para movernos a layout descuentos
+    fun irADescuento(){
+        val intent = Intent(this, DescuentoActivity::class.java).apply {  }
+        startActivity(intent)
+    }
+
 }
