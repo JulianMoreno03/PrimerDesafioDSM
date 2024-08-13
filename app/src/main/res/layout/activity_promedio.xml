@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnVolver"
@@ -149,16 +149,16 @@
         android:id="@+id/btnBorrar"
         android:layout_width="127dp"
         android:layout_height="50dp"
-        android:text="@string/btnBorrar"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="@color/btnBorrar"
-
+        android:text="@string/btnBorrar"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.715"
-        app:layout_constraintStart_toEndOf="@+id/btnCalPromedio"
+        app:layout_constraintStart_toEndOf="@+id/btnCalcular"
         app:layout_constraintTop_toBottomOf="@+id/CuartaNota"
-        app:layout_constraintVertical_bias="0.317" />
+        app:layout_constraintVertical_bias="0.318" />
 
     <TextView
         android:id="@+id/textView"
@@ -183,5 +183,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/QuintaNota" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textEjercicio1"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.63" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

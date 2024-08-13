@@ -10,5 +10,8 @@
     <string name="quintaNota">Quinta Nota 25%</string>
     <string name="btnCalcular">Calcular </string>
     <string name="btnBorrar">Borrar</string>
+    <string name="textEjercicio1">Calcular Promedio final</string>
+    <string name="textEjercicio2">descuentos salariales </string>
+    <string name="descuent">Ingresa tu salario para calcular los descuentos finales </string>
     <string name="txtelegir">Presiona cualquier boton para ver el problema</string>
 </resources>
